@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Hero from "./components/Hero";
+import Lyrics from "./components/Lyrics";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import { startSnow } from "./snow";
+import "./App.css";
 
 function App() {
+  useEffect(() => {
+    startSnow();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Snow layer */}
+      <canvas id="snow-canvas"></canvas>
+
+      <Hero />
+      <Lyrics />
+      <About />
+      <Footer />
+    </>
   );
 }
 
