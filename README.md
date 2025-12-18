@@ -5,7 +5,7 @@ A QR-based Christmas Concert website built with React & Firebase.
 ## Features
 - Multiple song lyrics
 - Live like counter
-- Gold & black theme
+- Blue & black theme
 - Snow falling effect
 - QR audience interaction
 
