@@ -186,3 +186,138 @@ html {
     transform: translateY(8px);
   }
 }
+/* ===========================
+   MOBILE RESPONSIVENESS
+   =========================== */
+
+/* General small screen fixes */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 70px 16px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .scroll-btn {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  /* SECTION SPACING */
+  .section {
+    padding: 45px 14px;
+  }
+
+  /* SONG TITLE */
+  .song-title {
+    font-size: 22px;
+  }
+
+  /* LYRICS BOX */
+  .lyrics {
+    padding: 18px;
+    font-size: 14px;
+    line-height: 1.8;
+    border-radius: 12px;
+  }
+
+  /* SONG CARD */
+  .song-card {
+    margin-bottom: 45px;
+  }
+
+  /* LIKE SECTION */
+  .like-section {
+    margin-top: 50px;
+  }
+
+  .like-line {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .like-btn {
+    padding: 12px 26px;
+    font-size: 15px;
+    border-radius: 35px;
+  }
+
+  /* ABOUT SECTION */
+  .old-song h3 {
+    font-size: 18px;
+  }
+
+  .old-song p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  /* YOUTUBE VIDEO */
+  .video-wrapper {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .video-wrapper iframe {
+    border-radius: 12px;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 13px;
+    padding: 22px 14px;
+  }
+
+  .footer-sub {
+    font-size: 12px;
+  }
+}
+
+/* ===========================
+   VERY SMALL PHONES (≤ 400px)
+   =========================== */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .song-title {
+    font-size: 20px;
+  }
+
+  .lyrics {
+    font-size: 13.5px;
+  }
+
+  .like-btn {
+    font-size: 14px;
+    padding: 11px 22px;
+  }
+}
+
+/* ===========================
+   TOUCH FRIENDLY FIXES
+   =========================== */
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.like-btn {
+  min-height: 44px; /* recommended touch size */
+}
