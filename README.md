@@ -14,4 +14,4 @@ A QR-based Christmas Concert website built with React & Firebase.
 - Firebase Firestore
 
 ## Live Demo
-(Add link after deploy)
+ https://joyful-encore.web.app
